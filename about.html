@@ -17,36 +17,27 @@
     </header>
     
     <main>
-
-        <canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
-            Your browser does not support the HTML canvas tag.
-        </canvas>
-            
-        <script>
-            var c = document.getElementById("myCanvas");
-            var ctx = c.getContext("2d");
-            ctx.font = "30px Arial";
-            ctx.fillText("About Me",10,50);
-        </script>
-
-        <br>
-        <svg height="130" width="500">
-            <defs>
-            <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
-                <stop offset="0%"
-                style="stop-color:rgb(255,255,0);stop-opacity:1" />
-                <stop offset="100%"
-                style="stop-color:rgb(255,0,0);stop-opacity:1" />
-            </linearGradient>
-            </defs>
-            <ellipse cx="95" cy="70" rx="85" ry="55" fill="url(#grad1)" />
-            <text fill="#ffffff" font-size="45" font-family="Verdana"
-            x="50" y="86">YFH</text>
-        </svg>
+        <section class="title">
+            <h1>About Me -- Fenghao Yang</h1>
+            <svg height="130" width="190" id="logo">
+                <defs>
+                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%"
+                    style="stop-color:rgb(255,255,0);stop-opacity:1" />
+                    <stop offset="100%"
+                    style="stop-color:rgb(255,0,0);stop-opacity:1" />
+                </linearGradient>
+                </defs>
+                <ellipse cx="95" cy="70" rx="85" ry="55" fill="url(#grad1)" />
+                <text fill="#ffffff" font-size="45" font-family="Verdana"
+                x="50" y="86">YFH</text>
+            </svg>
+        </section>
+        
         
 
         <section>
-            <h2>Fenghao Yang</h2>
+            <h2>Facts</h2>
             <details>
                 <summary>Something Interesting about me</summary>
                 <p>My name is <strong>Fenghao Yang</strong>. I am a fourth year computer science student at UCSD lived in San Diego currently. My dream is to become a software enginner in the near future. </p>
@@ -55,10 +46,6 @@
 
             
             <br><br>
-            <audio controls>
-                <source src="media/testAudio.m4a" type="audio/ogg">
-                Your browser does not support the audio element.
-            </audio>
             <br><br>
             <h4>Function coming soon!</h4>
             <button type="button">Click To Display my skills</button>
@@ -76,11 +63,13 @@
 
         <section>
             <h2>Favorite song -- Kaijiu no Hanauta</h2>
-            <figure>
-                <img src="img/songCover.jpg" alt="songCover" width="240">
-                <figcaption>Song cover</figcaption>
-            </figure>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/UM9XNpgrqVk" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <aside  class="song">
+                <figure>
+                    <img src="img/songCover.jpeg" alt="songCover" width="240" class="songCover">
+                    <figcaption>Song cover</figcaption>
+                </figure>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/UM9XNpgrqVk" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </aside>
         </section>
 
         <section>
@@ -90,16 +79,6 @@
                 Your browser does not support the video tag.
             </video>
         </section>
-
-        <h2>Favorite language and its sample code</h2>
-        <pre><code>
-public static void main(String[] args) {
-    System.out.println("Hello World!");
-}
-        </code>
-        </pre>
-
-
     </main>
     
 </body>
