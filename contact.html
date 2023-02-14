@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Contact</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="projects.html">Projects</a> |
+            <a href="experiences.html">Experiences</a> |
+            <a href="about.html">About Me</a> |
+            <a href="contact.html">Contact</a>
+        </nav>
+        </header>
+    
+    <main>
+        <h1>Contact Information</h1>
+        <div>
+            <table>
+                <caption style="text-align: left;" >Contact Detail</caption>
+                <colgroup>
+                    <col span="2">
+                </colgroup>
+                <tr>
+                    <th>E-mail:</th>
+                    <td>
+                        f5yang@ucsd.edu<br>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Phone:</th>
+                    <td>
+                        123-456-7890<br>
+                    </td>
+                
+                </tr>
+        
+                <tr>
+                    <th>LinkedIn:</th>
+                    <td>
+                        https://www.linkedin.com/in/fenghao-yang-56323a216/<br>
+                    </td>
+                </tr>         
+             </table>
+             
+            </div>
+
+        <form action="#">
+            <fieldset>
+                <legend>Leave a Message to Me:</legend>
+                <label for="fname">First name:</label>
+                <input type="text" id="fname" name="fname"><br><br>
+                <label for="lname">Last name:</label>
+                <input type="text" id="lname" name="lname"><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br><br>
+                <label for="cars">Major</label>
+                <select name="cars" id="cars">
+                    <option value="default">--</option>
+                    <optgroup label="Engineering">
+                        <option value="cs">Computer Science</option>
+                        <option value="ce">Computer Engineering</option>
+                        <option value="mae">Mechanical Engineering</option>
+                    </optgroup>
+                    <optgroup label="Data Sciences">
+                        <option value="ds">Data Science</option>
+                    </optgroup>
+                    <optgroup label="Social Sciences">
+                        <option value="ds">Cognitive Science</option>
+                        <option value="ds">Sociology</option>
+                    </optgroup>
+                </select>
+                <br><br>
+
+                <label for="browser">Your Current Broswer:</label>
+                <input list="browsers" name="browser" id="browser">
+                <datalist id="browsers">
+                    <option value="Chrome">
+                    <option value="Edge">
+                    <option value="Firefox">
+                    <option value="Safari">
+                    <option value="Other">
+                </datalist>
+             
+                <p><label>Leave Your message here: </label></p>
+                <textarea name="message" rows="10" cols="60">
+                </textarea>
+                <br><br>
+
+                <input type="submit" value="Submit">
+            </fieldset>
+           </form>
+    </main>
+    
+</body>
+</html>
