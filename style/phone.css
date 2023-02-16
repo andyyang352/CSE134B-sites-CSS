@@ -76,8 +76,8 @@ footer{
 /* about.html */
 .title{
     display: flex;
-    flex-direction: row;
-    gap: 100px;
+    flex-direction: column;
+    gap: 20px;
 }
 
 #logo{
@@ -99,14 +99,16 @@ footer{
 
 aside.song{
     display: flex;
-    flex-direction: row;
-    gap: 100px;
+    flex-direction: column;
+    gap: 20px;
 }
 
-.songCover{
+img.songCover{
+    width: 320px;
+    height: auto;
     transition: width 2s;
 }
 
 .songCover:hover{
-    width: 480px;
+    width: 540px;
 }

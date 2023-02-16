@@ -21,7 +21,7 @@ nav {
 }
 
 nav a{
-    padding: 14px 16px;
+    padding: 14px 10px;
     color: white;
     text-decoration: none;
 }
@@ -76,8 +76,8 @@ footer{
 /* about.html */
 .title{
     display: flex;
-    flex-direction: row;
-    gap: 100px;
+    flex-direction: column;
+    gap: 20px;
 }
 
 #logo{
@@ -99,11 +99,13 @@ footer{
 
 aside.song{
     display: flex;
-    flex-direction: row;
-    gap: 100px;
+    flex-direction: column;
+    gap: 20px;
 }
 
-.songCover{
+img.songCover{
+    width: 240px;
+    height: auto;
     transition: width 2s;
 }
 
