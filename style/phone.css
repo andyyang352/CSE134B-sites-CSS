@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap');
+
+:root{
+    --nav-bar-color: #333;
+    font-size: 32px;
+}
+
+body {
+    margin: 10px;
+    padding: 0;
+    font-family: 'Mukta' ,Arial, sans-serif;
+    background-color: #f1f1f1;
+}
+
+nav {
+    margin: 0;
+    padding: 0;
+    background-color: var(--nav-bar-color);
+    padding: 14px;
+    font-size: 1rem;
+}
+
+nav a{
+    padding: 14px 16px;
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+div.info{
+    display: flex;
+    gap: 300px;
+}
+
+h1 {
+    font-size: 2rem;
+    color: blue;
+}
+
+h2{
+    font-size: 1.5rem;
+}
+
+h3{
+    font-size: 1rem;
+    color: gray;
+}
+
+p{
+    font-size: 0.5rem;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+img.avatar{
+    width: 200%;
+    height: auto;
+}
+
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: end;
+}
+
+/* about.html */
+.title{
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+}
+
+#logo{
+    margin-top: 20px;
+    background-color: pink;
+    animation-name: logoAnimation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    transform: skewY(10deg);
+}
+
+@keyframes logoAnimation {
+    0%   {background-color: white;}
+    25%  {background-color: yellow;}
+    50%  {background-color: green;}
+    75%  {background-color: blue;}
+    100% {background-color: white;}
+}
+
+aside.song{
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+}
+
+.songCover{
+    transition: width 2s;
+}
+
+.songCover:hover{
+    width: 480px;
+}
