@@ -50,15 +50,69 @@ h3{
     color: gray;
 }
 
+p{
+    font-size: 1rem;
+}
+
 section{
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
+img.avatar{
+    width: 100%;
+    height: auto;
+}
+
+
 footer{
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: end;
+}
+
+@media screen and (min-width: 600px) {
+    img.avatar{
+        width: 50%;
+    }
+}
+
+/* about.html */
+.title{
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+}
+
+#logo{
+    margin-top: 20px;
+    background-color: pink;
+    animation-name: logoAnimation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    transform: skewY(10deg);
+}
+
+@keyframes logoAnimation {
+    0%   {background-color: white;}
+    25%  {background-color: yellow;}
+    50%  {background-color: green;}
+    75%  {background-color: blue;}
+    100% {background-color: white;}
+}
+
+aside.song{
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+}
+
+.songCover{
+    transition: width 2s;
+}
+
+.songCover:hover{
+    width: 480px;
 }
