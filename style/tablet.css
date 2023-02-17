@@ -3,7 +3,7 @@
 :root{
     --nav-bar-color: #333;
     --background-color: #ddd;
-    font-size: 16px;
+    font-size: 24px;
 }
 
 body {
@@ -39,7 +39,7 @@ div.info{
 
 h1 {
     font-size: 2rem;
-    color: pink;
+    color: blue;
 }
 
 h2{
@@ -79,6 +79,14 @@ footer{
     display: flex;
     flex-direction: row;
     gap: 100px;
+}
+
+@media screen and (max-width: 850px) {
+    .title{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
 }
 
 #logo{

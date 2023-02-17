@@ -3,7 +3,7 @@
 :root{
     --nav-bar-color: #333;
     --background-color: #ddd;
-    font-size: 32px;
+    font-size: 16px;
 }
 
 body {
@@ -22,7 +22,7 @@ nav {
 }
 
 nav a{
-    padding: 14px 16px;
+    padding: 14px 12px;
     color: white;
     text-decoration: none;
 }
@@ -34,7 +34,7 @@ nav a:hover {
 
 div.info{
     display: flex;
-    gap: 300px;
+    gap: 50px;
 }
 
 h1 {
@@ -52,22 +52,17 @@ h3{
 }
 
 section>p{
-    font-size: 0.5rem;
+    font-size: 1rem;
 }
 
 details > p{
-    font-size: 0.5rem;
+    font-size: 1rem;
 }
 
 section{
     display: flex;
     flex-direction: column;
     gap: 20px;
-}
-
-img.avatar{
-    width: 200%;
-    height: auto;
 }
 
 
@@ -109,15 +104,21 @@ aside.song{
 }
 
 img.songCover{
-    width: 320px;
+    width: 240px;
     height: auto;
     transition: width 2s;
 }
 
 .songCover:hover{
-    width: 540px;
+    width: 380px;
 }
 
+iframe, video{
+    width: 420px;
+    height: 236px;
+}
+
+/* contact.html */
 input[type="text"], input[type="email"], input[id="browser"], select[id="cars"], input[type="submit"]{
     font-size: 1rem;
 }

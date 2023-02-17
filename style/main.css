@@ -3,7 +3,7 @@
 :root{
     --nav-bar-color: #333;
     --background-color: #ddd;
-    font-size: 16px;
+    font-size: 24px;
 }
 
 body {
@@ -34,7 +34,7 @@ nav a:hover {
 
 div.info{
     display: flex;
-    gap: 50px;
+    gap: 150px;
 }
 
 h1 {
@@ -62,7 +62,7 @@ section{
 }
 
 img.avatar{
-    width: 100%;
+    width: 150%;
     height: auto;
 }
 
